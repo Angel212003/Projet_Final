@@ -1,0 +1,30 @@
+{
+  "env": {
+    "node": true,       // Node.js : 'require', 'module', etc.
+    "jest": true,       // Jest : 'describe', 'it', 'expect'
+    "es2021": true      // Syntaxe ES6+
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,   // ES2021
+    "sourceType": "script" // CommonJS (require/module.exports)
+  },
+  "rules": {
+    "no-unused-vars": "warn",       // avertit sur les variables non utilisées
+    "no-console": "off",            // autorise console.log pour debug
+    "semi": ["error", "always"],    // oblige les points-virgules
+    "quotes": ["error", "single"],  // impose les quotes simples
+    "indent": ["error", 2],         // indentation 2 espaces
+    "comma-dangle": ["error", "never"]
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js", "tests/**/*.js"],
+      "rules": {
+        "no-undef": "off"           // Jest global variables sont reconnues
+      }
+    }
+  ]
+}
