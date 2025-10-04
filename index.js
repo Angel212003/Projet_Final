@@ -1,17 +1,9 @@
-const express = require('express');
-const app = express();
-const PORT = 3000;
+const express = require('express'); 
 
-app.get('/', (req, res) => {
-  res.send('Hello Docker + CI/CD!');
-});
+const app = express(); 
 
-// On exporte l'app pour les tests
+app.get('/', (req, res) => { 
+res.send('Hello Docker + CI/CD!'); 
+}); 
+
 module.exports = app;
-
-// On démarre le serveur uniquement si le fichier est exécuté directement
-// if (require.main === module) {
-//   app.listen(PORT, () => {
-//     console.log(`Server running on port ${PORT}`);
-//   });
-// }
