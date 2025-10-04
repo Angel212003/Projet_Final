@@ -6,7 +6,7 @@
 
     "test": "jest",
 
-    "lint": "npx eslint ."
+    "lint": "eslint ."
 
   },
 
