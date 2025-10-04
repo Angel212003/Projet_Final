@@ -21,7 +21,7 @@
   },
   "overrides": [
     {
-      "files": [".test.js", "tests//.js"],
+      "files": ["*.test.js", "tests/**/*.js"],
       "rules": {
         "no-undef": "off"           // Jest global variables sont reconnues
       }
