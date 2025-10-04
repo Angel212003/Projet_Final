@@ -6,7 +6,7 @@ app.get('/', (req, res) => {
   res.send('Hello Docker + CI/CD!');
 });
 
-// On exporte l'app pour les tests
+// On exporte l'app pour les tests et le reste de l'application
 module.exports = app;
 
 // On démarre le serveur uniquement si le fichier est exécuté directement
